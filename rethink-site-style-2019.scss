@@ -27,7 +27,7 @@ h5,h6 {
 p {
 	color:rgb(148, 148, 148);
 }
-.btn {
+.btn, button {
 	background: $color-primary;
 	border-radius: 1000px;
 	font-family:$font;
@@ -45,15 +45,64 @@ p {
 	transition-property:background-color, color, border-color;
 	transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
 }
-strong {}
+strong {
+	font-weight: 700;
+}
 span {}
 a  {}
 a:link {}
-label {}
-input {}
+label {
+	//font-size: var(--font-size-5);
+    //font-family: var(--font-family-title);
+    font-weight: bolder;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: block;
+}
+input {
+	cursor: pointer;
+	overflow: visible;
+	display: block;
+    width: 100%;
+    border-radius: 1000px;
+    border: none;
+    //background: var(--color-gray-10);
+    padding: .875rem 1.75rem;
+    font-weight: 700;
+    outline: 0;
+    //color: var(--color-text-base);
+    min-width: 10px;
+    max-width: 550px;
+}
 textarea {}
-button {}
-.quote {}
+
+.quote {
+	margin-top: 60px;    
+	quotes: "“" "”" "‘" "’";
+	//font-family: var(--font-family-title)!important;
+	//    padding-right: var(--spacer-3);
+	//    padding-left: var(--spacer-3);
+
+}
+.quote.is-groups .has-quotes:before {
+    //color: var(--color-warning-base);
+    content: open-quote;
+}
+.quote .has-quotes:before {
+    font-size: 95px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    //font-family: var(--font-family-paragraph);
+    //color: var(--color-brand-base);
+    content: open-quote;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
 /*
 grey background
 roundal
