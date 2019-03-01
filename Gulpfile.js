@@ -11,7 +11,7 @@ var gulp         = require('gulp'),
 
 var watch_paths = {
 	//scripts: ['assets_src/js/modules/*.js'],
-	styles:  ['*.scss']
+	styles:  ['sass/*.scss']
 };
 
 
