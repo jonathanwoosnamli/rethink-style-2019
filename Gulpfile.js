@@ -1,3 +1,7 @@
+
+//npm install -save module1 module2
+//npm install -save gulp-postcss gulp-uglify gulp-plumber gulp-rename autoprefixer gulp-notify gulp-sass gulp-concat lost
+
 var gulp         = require('gulp'),
 	postcss 	 = require('gulp-postcss'),
 	uglify       = require('gulp-uglify'),
