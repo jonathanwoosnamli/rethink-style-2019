@@ -1,0 +1,183 @@
+// ------------------------------
+// Sass Variables
+// ------------------------------
+
+
+//Settings
+$use-css-var: true;
+$root-default: ":root";
+
+
+$color-prefix: --color-;
+$color-gray-prefix: --color-gray-;
+$color-themes: (
+  brand:
+    (
+      base: hsl(196, 100%, 47%), // From design
+      dark: hsl(201, 99%, 35%), // From design
+      light: hsl(196, 100%, 57%),
+      transparent: hsla(196, 100%, 47%, 0.5),
+      contrast: hsl(0, 0%, 100%) // From design
+    ),
+  branddark:
+    (
+      base: hsl(201, 99%, 35%), // From design
+      dark: hsl(201, 90%, 28%), 
+      light: hsl(195, 72%, 51%),
+      transparent: hsla(196, 100%, 47%, 0.5),
+      contrast: hsl(0, 0%, 100%) // From design
+    ),
+      altblue:
+    (
+      base: hsl(196, 100%, 46%), 
+      dark: hsl(196, 42%, 38%), 
+      light: hsl(198, 86%, 95%), 
+      transparent: hsla(198, 86%, 95%, 0.5),
+      contrast: hsl(240, 0%, 58%) // From design
+    ),
+  primary:
+    (
+      base: hsl(301, 58%, 36%), // From design
+      dark: hsl(301, 58%, 26%),
+      light: hsl(301, 58%, 46%),
+      transparent: hsla(301, 58%, 36%, 0.5),
+      contrast: hsl(0, 0%, 100%) // From design
+    ),
+  secondary:
+    (
+      base: hsl(173, 56%, 35%), // From design
+      dark: hsl(173, 56%, 25%),
+      light: hsl(172, 51%, 58%), // From design
+      transparent: hsla(173, 56%, 35%, 0.5),
+      contrast: hsl(0, 0%, 100%) // From design
+    ),
+  text:
+    (
+      base: hsl(0, 0%, 39%),
+      //base: hsl(240, 0%, 58%), // From design
+      dark: hsl(0, 0%, 0%), // From design
+      light: hsl(0, 0%, 65%),
+      transparent: hsla(0, 0%, 39%, 0.5),
+      contrast: hsl(0, 0%, 100%) // From design
+    ),
+  success:
+    (
+      base: hsl(173, 56%, 35%), 
+      dark: hsl(173, 56%, 25%),
+      light: hsl(172, 51%, 58%), 
+      transparent: hsla(173, 56%, 35%, 0.5),
+      contrast: hsl(0, 0%, 100%) 
+    ),
+  danger:
+    (
+      base: hsl(357, 85%, 52%), // From design
+      dark: hsl(357, 85%, 42%),
+      light: hsl(357, 85%, 32%),
+      transparent: hsla(357, 85%, 52%, 0.5),
+      contrast: hsl(0, 0%, 100%)
+    ),
+  warning:
+    (
+      base: hsl(31, 100%, 50%), // From design
+      dark: hsl(31, 100%, 40%),
+      light: hsl(31, 100%, 60%),
+      transparent: hsla(31, 100%, 50%, 0.5),
+      contrast: hsl(0, 0%, 100%)
+    ),
+   light:
+    (
+      base: hsl(100%, 100%, 100%), // From design
+      dark: hsla(240, 0%, 58%, 0.5),
+      light: hsl(100%, 100%, 100%),
+      transparent: hsla(100%, 100%, 100%, 0.5),
+      contrast: hsl(240, 0%, 58%)
+    )
+);
+
+$gray-themes: (
+  0: hsl(0, 0%, 100%),
+  10: hsl(0, 0%, 95%), // From design Breadcrumb color and grey bg color
+  20: hsl(0, 0%, 85%),
+  30: hsl(0, 0%, 75%),
+  40: hsl(0, 0%, 65%),
+  50: hsl(0, 0%, 58%), // From design Text color
+  60: hsl(0, 0%, 48%),
+  70: hsl(0, 0%, 38%),
+  80: hsl(0, 0%, 28%),
+  90: hsl(0, 0%, 18%),
+  100: hsl(0, 0%, 0%) // From design Footer bg
+);
+
+// ------------------------------
+// Set color function
+// ------------------------------
+// retrieve color from map with Sass ie. `color(primary, base)`
+/* purgecss start ignore */
+@function color($color-name, $color-variant:null, $true-val:false) {
+  // if we enable css var
+  @if $use-css-var == true {
+    // we need to return the color value
+    @if $true-val == true {
+      // color variant is optional
+      @if ($color-variant != null) {
+        // map inception, need two deep
+        @return map-get(map-get($color-themes,$color-name),$color-variant);
+      } @else {
+        // Default color
+        @return map-get(map-get($color-themes,$color-name), base);
+      } // if we're only returning the CSS4 variable
+    } @else {
+      // color variant is optional
+      @if ($color-variant != null) {
+        // map inception, need two names
+        @return var(#{$color-prefix}#{$color-name}-#{$color-variant});
+      } @else {
+        // Default color, one name
+        @return var(#{$color-prefix}#{$color-name}-base);
+      }
+    }
+  } @else {
+    // color variant is optional
+    @if ($color-variant != null) {
+      // map inception, need two deep
+      @return map-get(map-get($color-themes,$color-name),$color-variant);
+    } @else {
+      // Default color
+      @return map-get(map-get($color-themes,$color-name), base);
+    }
+  }
+}
+/* purgecss end ignore */
+/* purgecss start ignore */
+@function color-gray($gray-theme, $true-val:false) {
+  @if $use-css-var == true {
+    @if $true-val == true {
+      @return map-get($gray-themes, $gray-theme); // True Val
+    } @else {
+      @return var(#{$color-gray-prefix}#{$gray-theme});
+      // CSS Var
+    }
+  } @else {
+    @return map-get($gray-themes, $gray-theme); // Disabled CSS Var
+  }
+}
+/* purgecss end ignore */
+// ------------------------------
+// Set root variables
+// ------------------------------
+@if $use-css-var == true {
+  #{$root-default} {
+    @each $name, $color in $color-themes {
+      @if type-of($color) == "map" {
+        @each $subname, $subcolor in $color {
+          #{$color-prefix}#{$name}-#{$subname}: $subcolor;
+        }
+      } @else if type-of($color) == "color" {
+        #{$color-prefix}#{$name}: $color;
+      }
+    }
+    @each $name, $gray-theme in $gray-themes {
+      #{$color-gray-prefix}#{$name}: $gray-theme;
+    }
+  }
+}
