@@ -6,6 +6,14 @@ input {
   cursor: pointer;
 }
 
+body {
+ @include min(bp(sm)) {
+        
+        //background:red;
+    }
+
+}
+
 #{$textual-form-inputs-class} {
     display: block;
     width: 100%;
@@ -18,6 +26,13 @@ input {
     color: color(text);
     min-width: 10px;
     max-width: 550px;
+
+    min-height: 70px;
+    @include min(bp(sm)) {
+        min-height: auto;
+        //background:red;
+    }
+    
 
     &:hover {
         border-color: color-gray(60);

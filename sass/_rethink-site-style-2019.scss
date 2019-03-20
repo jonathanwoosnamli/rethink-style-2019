@@ -7,6 +7,9 @@ $font-header:CoRethink, "Helvetica Neue", Arial, sans-serif;
 $root-default: ":root";
 $use-css-var: true;
 
+$max-width:1120px;
+
+$text-block-width: 736px;
 
 $font:"Helvetica Neue", Arial, sans-serif;
 // ------------------------------
@@ -25,6 +28,38 @@ $font-sizes: (
   button: 1rem,
   small: 0.8125rem
 );
+
+
+html {
+    font-size: font-size(root);
+
+    /*font-size: calc(#{font-size(root)} - 2px);
+
+  @include min(#{bp(sm)}) {
+    font-size: font-size(root);
+  }*/
+}
+
+// ------------------------------
+// General
+// ------------------------------
+body {
+  font-family: font-family(paragraph);
+  font-size: font-size(paragraph);
+  color: color(text);
+
+  //container
+
+
+}
+
+//will need alternative
+//need other containers?
+.campaignsSAWForm {
+  //max-width:$max-width;
+  //margin:auto;
+  padding:1rem;
+}
 
 // ------------------------------
 // Set font-size function
@@ -74,9 +109,29 @@ h5,h6 {
 	font-size: 16px;
 }
 p {
-	color:rgb(148, 148, 148);
+	//color:rgb(148, 148, 148);
 }
-.btn, button {
+
+p,
+.is-p,
+.has-font-size-p, span {
+  font-size: font-size(paragraph);
+  line-height: 1.5;
+  max-width: $text-block-width;
+  display: block;
+}
+
+p,
+.is-p, span {
+  margin-bottom: spacer(2);
+
+  &.is-small {
+      font-size: font-size(small);
+  }
+}
+
+
+.btn, button, input[type="button"] {
 	background: $color-primary;
 	border-radius: 1000px;
 	font-family:$font;
@@ -108,7 +163,14 @@ label {
     margin-bottom: 0;
     cursor: pointer;
     display: block;
+    padding: spacer(6) 0 spacer(4) 0;
+
 }
+
+hr {
+  margin: spacer(6) 0;
+}
+
 input {
 	cursor: pointer;
 	overflow: visible;
