@@ -620,17 +620,17 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
         function OnClientRequesting(sender, args) {
             if (sender.get_entries().get_count() > 0) {
                 args.set_cancel(true);
-                jQuery(sender._loadingIcon).remove();
+                //jQuery(sender._loadingIcon).remove();
             }
         }
 
         function OnClientLoad(sender) {
-            jQuery("#" + sender.get_id() + " .racInput").on('keydown', function(e) {
+            /*jQuery("#" + sender.get_id() + " .racInput").on('keydown', function(e) {
                 if (sender.get_entries().get_count() > 0) {
                     e.stopPropagation();
                     e.preventDefault();
                 }
-            });
+            });*/
         }
 
         function FormToolzWordCount(val) {
@@ -642,43 +642,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
             };
         }
 
-        jQuery(function () {
-            jQuery("textarea[maxlength]").bind('input propertychange', function () {
-                var maxLength = jQuery(this).attr('maxlength');
-                if (jQuery(this).val().length > maxLength) {
-                    jQuery(this).val(jQuery(this).val().substring(0, maxLength));
-                }
-            });
-
-            jQuery('#WebToolzOverlayafe9967ba05c40918671ce5ae74acd3a').css('background-image', 'url(https://shop.rethink.org/iParts/Zengage/Flexible%20Formz/spinner.gif)');
-
-            var prmWebToolzafe9967ba05c40918671ce5ae74acd3a = Sys.WebForms.PageRequestManager.getInstance();
-            prmWebToolzafe9967ba05c40918671ce5ae74acd3a.add_initializeRequest(InitializeRequestWebToolzafe9967ba05c40918671ce5ae74acd3a);
-            prmWebToolzafe9967ba05c40918671ce5ae74acd3a.add_endRequest(EndRequestWebToolzafe9967ba05c40918671ce5ae74acd3a);
-            function InitializeRequestWebToolzafe9967ba05c40918671ce5ae74acd3a(sender, args) {
-                jQuery('#WebToolzOverlayafe9967ba05c40918671ce5ae74acd3a').css('background-image', 'url(https://shop.rethink.org/iParts/Zengage/Flexible%20Formz/spinner.gif)');
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a :input").prop("disabled", true);
-                jQuery("#WebToolzOverlayafe9967ba05c40918671ce5ae74acd3a").show();
-                if (jQuery('.afdListBox').length) {
-                    jQuery('html, body').animate({ scrollTop: jQuery('.afdListBox').offset().top }, 500);
-                }
-            }
-            function EndRequestWebToolzafe9967ba05c40918671ce5ae74acd3a(sender, args) {
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a :input").prop("disabled", false);
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a .readOnly").prop("disabled", true);
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a .readOnly :input").prop("disabled", true);
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a .checkBoxReadOnly :input").prop("disabled", true);
-                jQuery("#WebToolzOverlayafe9967ba05c40918671ce5ae74acd3a").hide();
-
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a").find(".fadeIn").delay(500).fadeIn("slow");
-                jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a").find(".fadeOut").delay(5000).fadeOut("slow");
-            }
-        });
-
-        jQuery(document).ready(function()
-        {
-            jQuery("#WebToolzWrapperafe9967ba05c40918671ce5ae74acd3a").find(".fadeIn").delay(500).fadeIn("slow");
-        });
+ 
     </script>
 
 
@@ -693,39 +657,14 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
         <div class="iMIS-WebPart">
           <div id="ste_container_ciNewContentHtml" class="ContentItemContainer"><div id="ctl00_TemplateBody_WebPartManager1_gwpciNewContentHtml_ciNewContentHtml_Panel_NewContentHtml">
   <script type="text/javascript"> 
-jQuery( document ).ready(function() {
-    initialiseUI();
- }); 
+
 
 var prm = Sys.WebForms.PageRequestManager.getInstance();              
    prm.add_endRequest(function (s, e) {
   initialiseUI();
  });    
 
-function initialiseUI () {             
-
-   jQuery('label[for="ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdStateProvince8677da2d628e4a42ac634d699f6f12af"]').text("County");
- 
-  jQuery("#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdFax8677da2d628e4a42ac634d699f6f12af").parent().parent().hide();
- 
- jQuery("#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdPostCode8677da2d628e4a42ac634d699f6f12af").closest(".PanelField").after(jQuery("#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdCountry8677da2d628e4a42ac634d699f6f12af").closest("div").parent());
-
-jQuery("#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdPhone8677da2d628e4a42ac634d699f6f12af").closest(".PanelField").after(jQuery("#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_180d23516f0a494f9ad5d1a31f4cee2e").closest("div").parent());
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdEmail8677da2d628e4a42ac634d699f6f12af']").append('<span style="color:red;">&nbsp;*</span>');
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_4291b38b5a874d0388eca4a91db250a3']").append('<span style="color:red;">&nbsp;*</span>');
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_aec4f6dcbcb24a999e040b2969504102']").append('<span style="color:red;">&nbsp;*</span>');
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdAddress18677da2d628e4a42ac634d699f6f12af']").append('<span style="color:red;">&nbsp;*</span>');
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdCity8677da2d628e4a42ac634d699f6f12af']").append('<span style="color:red;">&nbsp;*</span>');
-
-jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdCountry8677da2d628e4a42ac634d699f6f12af']").append('<span style="color:red;">&nbsp;*</span>');
-
-   
- }               
+            
               
 </script>
 </div><div>
@@ -898,23 +837,7 @@ jQuery("label[for='ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd
 var submitButton= '#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_a92f9c7c4d084ce1b654d2a8d237a052';
 
 
-var testAppearTmr = setInterval(function() {
-    if (jQuery('.signupError').length) {
-       jQuery('.signupError').hide();
-       jQuery('.signupError').insertAfter(submitButton);   
-       jQuery('.signupError').show();
-       clearInterval(testAppearTmr);
-      } else {}
-}, 250);
 
-var testAppearTmr2 = setInterval(function() {
-    if (jQuery('.signupConfirmation').length) {
-       jQuery('.signupConfirmation').hide();
-       jQuery('.signupConfirmation').insertAfter(submitButton);   
-       jQuery('.signupConfirmation').show();
-       clearInterval(testAppearTmr2);
-       } else {}
-}, 250);
 
 
 
@@ -1023,28 +946,11 @@ var testAppearTmr2 = setInterval(function() {
 
     var gCartCount;
     var cartDiv = $get("CartItemCount");
-    if (cartDiv != null){
-        jQuery.ajax({
-            type: "POST",
-            url: gWebRoot + "/WebMethodUtilities.aspx/GetCartItemCount",
-            data: "{}",
-            contentType: "application/json; charset=utf-8",
-            dataType: 'json',
-            success: function(result) {
-                if (result.d != '' && result.d != null) {
-                    gCartCount = result.d;
-                    if (gCartCount != null) {
-                        cartDiv.innerHTML = gCartCount;
-                    }
-                }
-            },
-            async: true
-        });
-    }
+
 
     function CheckForChildren() {
         var contentRecordPageButtonPanelHasChildren = false;
-        var contentRecordPageButtonPanel = jQuery('div.ContentRecordPageButtonPanel');
+        //var contentRecordPageButtonPanel = jQuery('div.ContentRecordPageButtonPanel');
         for (var i = 0, max = contentRecordPageButtonPanel.length; i < max; i++) {
             if (contentRecordPageButtonPanel[i].children.length > 0) {
                 contentRecordPageButtonPanelHasChildren = true;
@@ -1052,7 +958,7 @@ var testAppearTmr2 = setInterval(function() {
             }
         }
         if (!contentRecordPageButtonPanelHasChildren) {
-            jQuery("Body").addClass("TemplateAreaEasyEditOn");
+            //jQuery("Body").addClass("TemplateAreaEasyEditOn");
         }
     }
     if (gIsEasyEditEnabled)
@@ -1090,7 +996,7 @@ var appPrfa72bc02647649959318fcb0c95d86cf = Sys.Application; appPrfa72bc02647649
                                 }
 
                             function PrPageLoadedfa72bc02647649959318fcb0c95d86cf(sender, args) {
-                                jQuery('.afdAddressFinderButton').appendTo(jQuery('.afdAddressFinder').closest('div'));
+                                //jQuery('.afdAddressFinderButton').appendTo(jQuery('.afdAddressFinder').closest('div'));
                             }var onloadCallback = function() {
                                 grecaptcha.render('recaptcha', {
                                     'sitekey': '6LdtHxQUAAAAAFi5mbJyJhtwdNwPA8FcEEl8fNXI'
