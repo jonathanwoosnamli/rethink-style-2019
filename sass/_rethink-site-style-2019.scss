@@ -30,6 +30,23 @@ $font-sizes: (
 );
 
 
+.Required {
+  background-image:none !important;
+
+}
+.Required:before {
+  content:"*";
+  color:red;
+  width:1rem;
+  padding-right:1rem;
+  }
+.PanelField label, .PanelField .Label {
+  width:100%;
+}
+.PanelFieldValue, .Left .PanelFieldValue {
+  float:none !important;
+}
+
 html {
     font-size: font-size(root);
 
@@ -193,6 +210,7 @@ input {
 
 select {
   border-radius: 0;
+  padding:0 3rem;
 }
 
 textarea {}
