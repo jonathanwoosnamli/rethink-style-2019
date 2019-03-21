@@ -30,22 +30,7 @@ $font-sizes: (
 );
 
 
-.Required {
-  background-image:none !important;
 
-}
-.Required:before {
-  content:"*";
-  color:red;
-  width:1rem;
-  padding-right:1rem;
-  }
-.PanelField label, .PanelField .Label {
-  width:100%;
-}
-.PanelFieldValue, .Left .PanelFieldValue {
-  float:none !important;
-}
 
 html {
     font-size: font-size(root);
@@ -241,6 +226,23 @@ button, input, select, textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+}
+
+.Required {
+  background-image:none !important;
+
+}
+.Required:before {
+  content:"*";
+  color:red;
+  width:1rem;
+  padding-right:0.5rem;
+  }
+.PanelField label, .PanelField .Label {
+  width:100%;
+}
+.PanelFieldValue, .Left .PanelFieldValue {
+  float:none !important;
 }
 
 /*
