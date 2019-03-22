@@ -195,7 +195,9 @@ input {
 
 select {
   border-radius: 0;
-  padding:0 3rem;
+  //padding:inherit;
+  min-height: auto;
+  height:auto;
 }
 
 textarea {}
