@@ -55,13 +55,7 @@ body {
 
 }
 
-//will need alternative
-//need other containers?
-.campaignsSAWForm {
-  //max-width:$max-width;
-  //margin:auto;
-  padding:1rem;
-}
+
 
 // ------------------------------
 // Set font-size function
@@ -140,7 +134,7 @@ p,
 	font-family:$font;
 	color:white;
 	font-size:1rem;
-	padding:28px 14px;
+	padding:.875rem 1.75rem;
 	margin:2rem 0;
 	font-weight:700;
 	text-decoration-line: none;

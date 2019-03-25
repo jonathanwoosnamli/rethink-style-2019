@@ -10,8 +10,23 @@ p  {
  // font-size:16px !important;
  // font-family: arial, helvetica, sans-serif;
  // color:#292424;
-  padding: spacer(1);
+ //padding:5px;
+  //@include min(bp(sm)) {
+    padding: spacer(1);
+  //}
 }
+
+//will need alternative
+//need other containers?
+.campaignsSAWForm {
+  //max-width:$max-width;
+  //margin:auto;
+   padding:5px;
+  @include min(bp(sm)) {
+    padding: spacer(1);
+  }
+}
+
 
 span {
   //font-family: arial, helvetica, sans-serif;
@@ -31,7 +46,7 @@ a:hover {
 }
     
 .en__component.en__component--copyblock:first-of-type {
-  color:color(primary);
+  //color:color(primary);
 }
 .en__component.en__component--copyblock {
   clear: both;
@@ -49,7 +64,10 @@ div[class*=' en__field--opt-in-'] * {
 div[class*=' en__field--opt-in-']  {
 
   label {
-    min-width: 100px;
+    min-width: 50px;
+    @include min(bp(sm)) {
+      min-width: 100px;
+    }
   }
 
   padding: spacer(4) 0;
