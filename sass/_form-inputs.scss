@@ -25,13 +25,14 @@ body {
     outline: none;
     color: color(text);
     min-width: 10px;
-    max-width: 200px;
+    max-width: 230px;
 
     min-height: auto;
     @include min(bp(sm)) {
         //min-height: 70px;
         //background:red;
         max-width: 550px;
+
     }
     
 

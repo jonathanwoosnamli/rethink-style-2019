@@ -29,8 +29,12 @@ $font-sizes: (
   small: 0.8125rem
 );
 
-
-
+//find overflows on mobile
+/*
+  * {
+   outline: 1px solid red;
+  }
+*/
 
 html {
     font-size: font-size(root);
@@ -88,6 +92,7 @@ body {
 body {
 	font-family:$font;
   padding:1rem;
+  margin:0;
 }
 h1 {
 	font-size:45px;
@@ -153,7 +158,9 @@ p,
 strong {
 	font-weight: 700;
 }
-span {}
+span {
+  //padding:1rem 0;
+}
 a  {}
 a:link {}
 label {
@@ -163,16 +170,26 @@ label {
     margin-bottom: 0;
     cursor: pointer;
     display: block;
-    padding:1rem;
+    //padding:1rem 0.8rem;
 
-    @include min(bp(sm)) {
-      padding: spacer(5) 0 spacer(3) 0;
-    }
+    //@include min(bp(sm)) {
+      
+    //}
 
 }
 
+//ris field
+#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdControlsWrapper8677da2d628e4a42ac634d699f6f12af {
+  label {
+    padding: spacer(6) 0 spacer(3) 0;
+  }
+}
+
+
 hr {
   margin: spacer(6) 0;
+  max-width: 80%;
+  display: none;
 }
 
 input {
@@ -188,7 +205,7 @@ input {
     outline: 0;
     //color: var(--color-text-base);
     min-width: 10px;
-    max-width: 550px;
+    //max-width: 550px;
 }
 
 select {
@@ -239,7 +256,10 @@ button, input, select, textarea {
   padding-right:0.5rem;
   }
 .PanelField label, .PanelField .Label {
-  width:100%;
+  width:auto;
+    @include min(bp(sm)) {
+      width:100%;
+    }
 }
 .PanelFieldValue, .Left .PanelFieldValue {
   float:none !important;
