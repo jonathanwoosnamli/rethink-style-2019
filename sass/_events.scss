@@ -1,0 +1,40 @@
+.rcorners1 {
+	background: transparent !important;
+	border:none;
+
+}
+.rcorners2 {
+	border:none !important;
+	font-weight: bold;
+}
+
+.PanelField {
+	padding:0;
+	@include min(bp(sm)) {
+		//padding:0;
+	}
+}
+
+
+[id^=ctl01] {
+	h3 {
+		color:color(text);
+		font-size: font-size(5);
+		font-weight: normal;
+	}
+}
+
+.header {
+	border-bottom: 0;
+}
+
+.footer-content {
+	background-color:color-gray(10) !important;
+}
+.footer-nav-copyright {
+	background-color:color-gray(10);	
+}
+.navfooter {
+	color:color-gray(60);
+	text-align: center;
+}

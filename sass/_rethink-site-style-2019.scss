@@ -169,7 +169,11 @@ label {
     margin-bottom: 0;
     cursor: pointer;
     display: block;
-    padding: spacer(5) 0 spacer(3) 0;
+    padding:1rem;
+
+    @include min(bp(sm)) {
+      padding: spacer(5) 0 spacer(3) 0;
+    }
 
 }
 
