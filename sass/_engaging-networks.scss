@@ -1,53 +1,18 @@
 //----Enganging networks styles
 
-
-.eaErrorMessage {
-  //font-size: 16px;
-    //font-family: sans-serif;
-}
-  
-p  {
- // font-size:16px !important;
- // font-family: arial, helvetica, sans-serif;
- // color:#292424;
- //padding:5px;
-  //@include min(bp(sm)) {
+p {
     padding: spacer(1);
-  //}
 }
 
 //will need alternative
 //need other containers?
 .campaignsSAWForm {
-  //max-width:$max-width;
-  //margin:auto;
    padding:5px;
   @include min(bp(sm)) {
     padding: spacer(1);
   }
 }
 
-
-span {
-  //font-family: arial, helvetica, sans-serif;
-}
-  
-a {
-  //color:#00adee;    
-}
-a:link {
-  //color:#00adee;
-}
-a:visited {
- // color:#00adee;
-}
-a:hover {
-  //color:#007dbe;
-}
-    
-.en__component.en__component--copyblock:first-of-type {
-  //color:color(primary);
-}
 .en__component.en__component--copyblock {
   clear: both;
 }
@@ -63,223 +28,16 @@ div[class*=' en__field--opt-in-'] * {
 }
 div[class*=' en__field--opt-in-']  {
 
-  label {
-    min-width: 50px;
-    @include min(bp(sm)) {
-      min-width: 100px;
-    }
-  }
-
   padding: spacer(4) 0;
 
-  .en__field__label {
-    padding:0 1rem;
-  }
-
-  //clear:both;
-  //width:100%;
-  //display: block;
-}
-input[type="checkbox"] {
-  display: inline-block;
-  //float:left;
 }
 
-#Opt_in_EMAILDiv {
- // padding-top:1em;
-}
-#Opt_in_SMSDiv {
-  //padding-bottom:1em;
-
-}
-    
-#SAW_Housing_Camp_Petition_TYDiv {
-    
-    }
-    
-.eaSubmitResetButtonGroup {
-   // float:none;
-}
-    
-#eaFormButtonGroup_1 {
-/*breaks lables for contact prefs*/
-   // float: none;
-      
-}
 
 /*needed for contact pref labels*/
 .eaFullWidthContent {
     float: none;
 }
       
- label  {
-  //font-size:16px !important;
- // font-family: arial, helvetica, sans-serif;
-  //color:#292424;
-  
-}
-  
-.campaignsSAWForm strong, .en__field__label {
-  //color:#007dbe;
-}
-  
-.en__field__label {
-  //width:295px;
- // font-weight:bold;
-}
+      
 
 
-    
-.campaignsSAWForm.eaFormElementLabel {
- // float:none;
-    
-}
-
-input[type="text"] {
-   // font-size:16px;
-  //font-family: arial, helvetica, sans-serif;
-}
-
-.en__submit {
-
-}
-
-
-input[type="submit"], .en__submit button {
-  
-  /*font-size:large;
-  text-align:center;
-  margin:auto;
-  margin-top:2em;
-  margin-bottom:2em;
-  display:block;
-  color:#e3e3e3;
-  background:#00adee;
-  text-transform:uppercase;
-  width:300px;
-
-  verticle-align:center;
-  padding:1.5em 2em;
-  text-decoration:none;border-radius:15px;*/
-}
-
-input[type="submit"] a, .en__submit button a {
- // height:200px
-}
-input[type="submit"]:hover, .en__submit:hover  button {
-  //background:#007dbe;
-}
-
-.eaQuestionCheckboxFormFieldContainer {
-    /*background: #e3e3e3;*/
-    /*max-width: 331px;*/
-    
-    /* border-top-left-radius: 15px; */
-    /* border-bottom-left-radius: 15px; */
-  
-}
-
-.eaQuestionCheckboxFormFieldContainer label {
-
- /*   background: #e3e3e3;
-    padding: 10px;
-    min-width: 200px;
-    text-shadow: 1px 1px 2px #fff;
-    border: 1px dashed #666;
-    display: inline-block;*/
-}
-  
-  
-.eaFormElementLabel, .en__field__label {
-    /*width: 90%;
-    float: left;
-    position: relative;
-    margin-left: 0px;
-    padding-right: 5px;
-    margin-bottom:0 !important;*/
-}
-  
-/*thank you page*/
-#SAW_Housing_Camp_and_Petition_TYDiv sup span span strong {
-  //font-size:33px;
-
-}
-#Reactivation_Thank_YouDiv strong span {
-  //font-size:33px;
-}
-
-
-#SAW_IntroDiv strong {
-  //font-size:23px;
-}
-
-
-.en__errorHeader {
-  //color: #e3e3e3;
-  
-}
-.en__errorList {
-  /*margin: 0;
-    background: red;
-    padding: 10px;
-    color: #fff;
-  font-family: sans-serif;*/
-}
-.en__field__error {
- // color:red;
- // font-family: sans-serif;
-
-}
-  
-.en__contactMessage__htmlDisplay iframe {
- /// min-height:700px;
-}
-.en__contactMessage__plainText {
-   // min-height: 500px;
-}
-.campaignsSAWForm {
-  //max-width:600px;
- // margin:auto;
-  }
-
-
-@media (max-device-width : 667px) {
-  label a strong, .en__field__label {
-    //font-size:17px;
-  }
-  .eaQuestionCheckboxFormFieldContainer label {
-    //font-size:18px !important;
-  }
-  input[type="submit"], .en__submit button {
-    //width:auto;
-    
-  }
-  input[type="text"] {
-      //width: 245px;
-  }
-  .eaFormTextfield {
-   // margin-bottom:20px;
-  }
-  .eaQuestionCheckbox input {
-   /* width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right:2px;*/
-  }
-
-  .eaValidationIcon {
-    //  padding-right: 3px;
-  }
-  p {
-    //width:290px;
-  }
-  
-}
-          
-.en__field--23275 label {
-  //width:200px;
-}
-
-.en__field--122992 label {
-  //width:200px;
-}

@@ -132,29 +132,7 @@ p,
 }
 
 
-.btn, button, input[type="button"] {
 
-	background: $color-primary;
-	border-radius: 1000px;
-	font-family:$font;
-	color:white;
-	font-size:1rem;
-	padding:.875rem 1.75rem;
-	margin:2rem 0;
-	font-weight:700;
-	text-decoration-line: none;
-	text-decoration-style: solid;
-	transition-delay:0s, 0s, 0s;
-	transition-duration:0.5s, 0.5s, 0.5s;
-	//width:106;
-	display: inline-block;
-	transition-property:background-color, color, border-color;
-	transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
-  border:0;
-  width:auto;
-  min-width: 200px;
-
-}
 strong {
 	font-weight: 700;
 }
@@ -163,28 +141,6 @@ span {
 }
 a  {}
 a:link {}
-label {
-	//font-size: var(--font-size-5);
-    //font-family: var(--font-family-title);
-    font-weight: bolder;
-    margin-bottom: 0;
-    cursor: pointer;
-    display: block;
-    //padding:1rem 0.8rem;
-
-    //@include min(bp(sm)) {
-      
-    //}
-
-}
-
-//ris field
-#ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdControlsWrapper8677da2d628e4a42ac634d699f6f12af {
-  label {
-    padding: spacer(6) 0 spacer(3) 0;
-  }
-}
-
 
 hr {
   margin: spacer(6) 0;
@@ -192,21 +148,7 @@ hr {
   display: none;
 }
 
-input {
-	cursor: pointer;
-	overflow: visible;
-	display: block;
-    width: 100%;
-    border-radius: 1000px;
-    border: none;
-    //background: var(--color-gray-10);
-    padding: .875rem 1.75rem;
-    font-weight: 700;
-    outline: 0;
-    //color: var(--color-text-base);
-    min-width: 10px;
-    //max-width: 550px;
-}
+
 
 select {
   border-radius: 0;
@@ -238,12 +180,7 @@ textarea {}
     //color: var(--color-brand-base);
     content: open-quote;
 }
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
+
 
 .Required {
   background-image:none !important;
@@ -255,12 +192,7 @@ button, input, select, textarea {
   width:1rem;
   padding-right:0.5rem;
   }
-.PanelField label, .PanelField .Label {
-  width:auto;
-    @include min(bp(sm)) {
-      width:100%;
-    }
-}
+
 .PanelFieldValue, .Left .PanelFieldValue {
   float:none !important;
 }

@@ -115,3 +115,57 @@ input[type="checkbox"] {
         }
     }
 }
+
+
+input {
+    cursor: pointer;
+    overflow: visible;
+    display: block;
+    width: 100%;
+    border-radius: 1000px;
+    border: none;
+    //background: var(--color-gray-10);
+    padding: .875rem 1.75rem;
+    font-weight: 700;
+    outline: 0;
+    //color: var(--color-text-base);
+    min-width: 10px;
+    //max-width: 550px;
+    margin-bottom:1rem;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+
+}
+
+.btn, button, input[type="button"] {
+
+    background: $color-primary;
+    border-radius: 1000px;
+    font-family:$font;
+    color:white;
+    font-size:1rem;
+    padding:.875rem 1.75rem;
+    margin:2rem 0;
+    font-weight:700;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    transition-delay:0s, 0s, 0s;
+    transition-duration:0.5s, 0.5s, 0.5s;
+    //width:106;
+    display: inline-block;
+    transition-property:background-color, color, border-color;
+    transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
+  border:0;
+  width:auto;
+  min-width: 200px;
+
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
