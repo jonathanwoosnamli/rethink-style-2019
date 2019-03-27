@@ -36,11 +36,13 @@ label {
     cursor: pointer;
     display: block;
     padding:0.5rem 1.5rem;
-    padding-top:3rem;
+    //padding-top:3rem;
+    padding-top:1rem;
+    line-height: 1.4rem;
 
-    //@include min(bp(sm)) {
-      
-    //}
+    @include min(bp(sm)) {
+      padding-top:3rem;
+    }
 
 }
 

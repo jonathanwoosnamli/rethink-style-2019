@@ -135,8 +135,8 @@ input {
 }
 
 input[type="checkbox"] {
-  display: inline-block;
-
+    display: inline-block;
+    margin-left: 1.6rem;
 }
 
 .btn, button, input[type="button"] {
@@ -157,9 +157,9 @@ input[type="checkbox"] {
     display: inline-block;
     transition-property:background-color, color, border-color;
     transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
-  border:0;
-  width:auto;
-  min-width: 200px;
+    border:0;
+    width:auto;
+    min-width: 200px;
 
 }
 
