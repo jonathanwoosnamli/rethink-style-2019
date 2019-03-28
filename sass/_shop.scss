@@ -1,8 +1,69 @@
 
+//create account and cart
+.nav-aux-button {
+	background: none;
+	&:hover {
+		background: none;
+	}
+}
+
+
+// shop menu
+.RadMenu ul.rmHorizontal, .RadMenu ul.rmHorizontal {
+
+    display: flex;
+    justify-content: space-between;
+	max-width:1000px;
+	margin:auto;
+	background:none;
+
+	width: 100%;
+    //background-color: varcolor-gray-0);
+    //padding: var(--spacer-2) 0;
+    box-shadow: -7px 9px 8px transparent;
+    //transition: box-shadow .3s ease-in-out;
+    border-bottom: 1px solid color-gray(20);
+
+
+
+
+
+	.rmItem {
+		.rmLink {
+			background:color-gray(0);	
+			color:color-gray(100);
+		}
+	}
+}
+
+.RadMenu.rmResponsive .rmRootGroup > .rmItem > .rmLink {
+	background:transparent;	
+	color:color(brand);
+	font-size: font-size(6);
+    font-weight: 700;
+    //width: 100%;
+    padding: spacer(1) 0 spacer(1) 0;
+
+	&:hover {
+		background:color-gray(0);	
+		color:color(branddark);
+	}
+}
+
 
 .shopFrontWindow h2 {
-	background:color(brand);
-	color:color-gray(0);
+	//background:color(brand);
+	background:none;
+	color:color(brand);
+	font-family:$font;
+	font-size: font-size(5);
+	position: absolute;
+	bottom:0;
+	margin-top:auto;
+	width:100%;
+	text-align: center;
+	padding:initial;
+	font-size: font-size(4);
 }
 
 
@@ -19,34 +80,56 @@ h2.PanelTitle {
 	background: color-gray(0);
 }
 
+.zen-popular-product-title a {
+	color:color-gray(100);
+	//font-weight: bold;
+	padding-bottom: spacer(6);
+	font-family: $font;
+}
 
-.difference span {
-	background:color(brand);
-	font-size: 16px;
-	height:auto;
-	text-shadow: none;
-	font-family:$font;
+
+.zen-popular-product-img {
+	border-radius: 50%;
 }
-.promise span {
-	background:color(brand);
-	font-size: 16px;
-	height:auto;
-	text-shadow: none;
-	font-family:$font;
+
+.wethinkwhymembercontain {
+	margin:auto;
 }
-.infinnity span {
-	background:color(brand);
-	font-size: 16px;
-	height:auto;
-	text-shadow: none;
-	font-family:$font;
+
+.difference, .promise, .infinnity, .delivery {
+	border-radius: 50%;
+	max-width: 200px;
 }
-.delivery span {
-	background:color(brand);
-	font-size: 16px;
+.difference span, .promise span, .infinnity span, .delivery span {
+	//background:color(brand);
+	//font-size: 16px;
 	height:auto;
 	text-shadow: none;
-	font-family:$font;
+	//font-family:$font;
+
+	position: relative;
+    bottom: -209px;
+    text-align: center;
+    background: none;
+    color: color(primary);
+    //left: -10px;
+	top:unset;
+
+
+	font-family: font-family(title);
+    
+    font-weight: 700;
+    line-height: 1.2;
+    font-size:font-size(5);
+    width:100%;
+	padding-top: spacer(6);
+	//border:1px solid red;
+	margin-bottom: spacer(6);
+}
+
+.footer {
+	margin-top: spacer(9);
+	display: block;
 }
 
 .footerLeft {
