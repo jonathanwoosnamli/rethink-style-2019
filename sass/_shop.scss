@@ -30,7 +30,8 @@
 	margin:auto;
 	background:none;
 
-	width: 100%;
+	//width: 100%;
+
     //background-color: varcolor-gray-0);
     //padding: var(--spacer-2) 0;
     box-shadow: -7px 9px 8px transparent;
@@ -63,7 +64,24 @@
 
 
 .shopFrontWindow {
-	margin-bottom: spacer(7);
+	//margin-bottom: spacer(7);
+	min-height: 210px;
+
+	@include min(bp(xs)) {
+		min-height: 308px;
+	}
+	@include min(bp(sm)) {
+		min-height: 327px;
+	}
+	@include min(bp(md)) {
+		min-height: 350px;
+		margin-bottom: spacer(1);
+	}
+	@include min(bp(lg)) {
+		min-height: 508px;
+		margin-bottom: spacer(7);
+	}
+
 
 	h2 {
 		background:color(brand);
@@ -72,14 +90,22 @@
 		color:color-gray(0);
 		font-family:$font;
 		font-size: font-size(5);
-		position: absolute;
-		bottom:0;
 		margin-top:auto;
 		width:100%;
 		text-align: center;
 		padding:initial;
 		font-size: font-size(4);
 		padding:spacer(3) spacer(3);
+
+		bottom:-144px;
+		position: relative;
+		/*@include min(bp(sm)) {
+			bottom:0;
+		}*/
+		@include min(bp(lg)) {
+			bottom:0;
+			position: absolute;
+		}
 	}
 }
 
@@ -96,10 +122,31 @@ h2.PanelTitle {
 	background: color-gray(0);
 }
 
+
+//hide 3rd product on tab only
+.zen-product {
+	
+	&:nth-child(3) {
+		@include min(bp(sm)) {
+			//background: red;
+			//border: 3px solid red;
+			display: none;
+		}
+		@include min(bp(lg)) {
+			//background: blue;
+			//border: 3px solid red;
+			display: inline-block;
+		}
+	}
+}
+
+
+
 .zen-popular-product-title a {
 	color:color-gray(100);
 	//font-weight: bold;
-	padding-bottom: spacer(6);
+	margin-bottom: spacer(2);
+	display: inline-block;
 	font-family: $font;
 }
 
@@ -114,9 +161,10 @@ h2.PanelTitle {
 
 .difference, .promise, .infinnity, .delivery {
 	border-radius: 50%;
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 150px;
+	max-height: 150px;
     background-size: cover;
+	margin:auto;
 
 	@include min(bp(sm)) {
 		max-width: 100px;
@@ -142,36 +190,41 @@ h2.PanelTitle {
 	height:auto;
 	text-shadow: none;
 	//font-family:$font;
-
 	position: relative;
-    bottom: -149px;
     text-align: center;
-    background: none;
     color: color(primary);
     //left: -10px;
-	top:unset;
-
-
+	top:100px;
+	z-index: 10;
 	font-family: font-family(title);
-    
     font-weight: 700;
     line-height: 1.2;
     font-size:font-size(5);
-    width:100%;
-    padding-top: spacer(1);
-
-    @include min(bp(lg)) {
-    	bottom: -209px;
-		padding-top: spacer(6);
-	}	
+    width:auto;
 	//border:1px solid red;
 	margin-bottom: spacer(6);
 
+	padding-top: spacer(1);
+	background:#fff;
+	bottom:auto;
+
+	@include min(bp(md)) {
+		top:unset;
+    	bottom: -149px;
+    	width:100%;
+    	background: none;
+    	//bottom: -209px;
+		padding-top: spacer(6);
+	}	
+	@include min(bp(lg)) {
+		top:170px;
+
+	}	
 
 }
 
 .footer {
-	margin-top: spacer(9);
+	margin-top: spacer(7);
 	display: block;
 }
 
@@ -180,11 +233,22 @@ h2.PanelTitle {
 		width:100%;
 		text-align: center;
 		margin: auto;
-		display: flex !important;
-		justify-content: space-between;
+		display: inline-block;
+		//justify-content: space-between;
+
+		@include min(bp(lg)) {
+			display: flex !important;
+			justify-content: space-between;
+		}
+
 
 		li {
 			font-size: font-size(5);
+			display: inline-block;
+			
+			@include min(bp(lg)) {
+				display: block;
+			}
 		}
 	}
 }

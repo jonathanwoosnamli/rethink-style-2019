@@ -1,3 +1,10 @@
 //Settings
 $use-css-var: true;
 $root-default: ":root";
+
+//to find overflowing elements
+/*
+* {
+    outline: 1px solid red;
+}
+*/
