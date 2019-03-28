@@ -1,0 +1,115 @@
+
+
+.shopFrontWindow h2 {
+	background:color(brand);
+	color:color-gray(0);
+}
+
+
+h2.PanelTitle {
+	background: color-gray(0);
+	color: color(brand);
+	font-family:$font;
+	padding: 0;
+	font-size:font-size(4);
+
+}
+
+.zen-product {
+	background: color-gray(0);
+}
+
+
+.difference span {
+	background:color(brand);
+	font-size: 16px;
+	height:auto;
+	text-shadow: none;
+	font-family:$font;
+}
+.promise span {
+	background:color(brand);
+	font-size: 16px;
+	height:auto;
+	text-shadow: none;
+	font-family:$font;
+}
+.infinnity span {
+	background:color(brand);
+	font-size: 16px;
+	height:auto;
+	text-shadow: none;
+	font-family:$font;
+}
+.delivery span {
+	background:color(brand);
+	font-size: 16px;
+	height:auto;
+	text-shadow: none;
+	font-family:$font;
+}
+
+.footerLeft {
+	ul {
+		width:100%;
+		text-align: center;
+		margin: auto;
+		display: flex !important;
+		justify-content: space-between;
+
+		li {
+			font-size: font-size(5);
+		}
+	}
+}
+.footerRight {
+
+	text-align: right;
+
+	.helpandadvice {
+		font-weight: normal;
+	}
+
+
+}
+
+.footer-content {
+	
+	padding-top:spacer(7);
+	padding-bottom:spacer(7);
+	background-color:color-gray(10) !important;
+	color:color-gray(60);
+
+	a {
+		color:color-gray(100);
+		text-decoration:none;
+		&:visited {
+			color:color-gray(100);
+		}
+		&:hover {
+			color:color-gray(100);
+		}
+	}
+}
+
+.navfooter {
+	color:color-gray(60);
+	text-align: center;
+	background-color:color-gray(10) !important;
+}
+
+/*.footer-content {
+	background-color:color-gray(10) !important;
+}
+.footer-nav-copyright {
+	background-color:color-gray(10);	
+}
+.navfooter {
+	color:color-gray(60);
+	text-align: center;
+}
+
+.nav-auxiliary .navbar-toggle {
+	background-color: color(brand);
+	color:black;
+}*/

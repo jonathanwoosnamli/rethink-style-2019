@@ -26,6 +26,20 @@ div[class*=' en__field--opt-in-']  {
       width:100%;
     }
 }
+.Left .PanelFieldValue {
+  float:none !important;
+}
+.Right .PanelFieldValue {
+  float:right !important;
+}
+
+//members
+.CommunicationPreferencesSection {
+    label {
+      padding-top: 0;       
+      padding-bottom: 0;
+    }
+}
 
 
 label {
