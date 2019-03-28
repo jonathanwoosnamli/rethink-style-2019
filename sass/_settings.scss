@@ -8,3 +8,31 @@ $root-default: ":root";
     outline: 1px solid red;
 }
 */
+
+
+//ris form iframe padding
+#MainPanel {padding:1rem;}
+
+
+
+
+// ------------------------------
+// Import fonts
+// ------------------------------
+$font-path: "/fonts/";
+
+@font-face {
+    font-family: 'CoRethink';
+    src: url('#{$font-path}CoRethink/CoRethink-Regular.woff2') format('woff2'), url('#{$font-path}CoRethink/CoRethink-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'CoRethink';
+    src: url('#{$font-path}CoRethink/CoRethink-Light.woff2') format('woff2'), url('#{$font-path}CoRethink/CoRethink-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}

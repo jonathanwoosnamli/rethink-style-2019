@@ -1,0 +1,54 @@
+
+
+.header-text {
+	img {
+		max-width:90px;
+		max-height:90px;
+	}
+	div {
+		font-size: font-size(1);
+		color:$color-brand;
+		font:$font-header;
+	}
+}
+
+
+input[type="button"].Padlock {
+	//background: blue url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
+	background: red;
+}
+
+
+
+.footerCentered > * {
+		text-align: center;
+		margin:auto;
+}
+
+.footerCentered {
+	span {
+		color:color-gray(60);
+	}
+	.rethinkColor {
+		font-size:font-size(6);
+	}
+
+	a {
+		font-size:font-size(6);	
+		color:color-gray(60);
+		font-weight: bold;
+	}
+}
+
+#RethinkFooter a {
+	font-size:font-size(6);	
+}
+
+.NavigationUnorderedList {
+	span {
+			color:color-gray(100);
+			font-weight:400;
+			font-size: font-size(5);
+			padding:0 spacer(2);
+		}
+}
