@@ -1,4 +1,17 @@
 
+#shopLogo a img {
+	max-width: 90px;
+	max-height: 90px;
+}
+//was pushing header down
+#ste_container_HeaderLogoSpan {
+	margin-bottom:0;
+}
+#masterLogoArea {
+	max-height: 100px;
+}
+
+
 //create account and cart
 .nav-aux-button {
 	background: none;
@@ -23,9 +36,7 @@
     box-shadow: -7px 9px 8px transparent;
     //transition: box-shadow .3s ease-in-out;
     border-bottom: 1px solid color-gray(20);
-
-
-
+	margin-bottom:spacer(5);
 
 
 	.rmItem {
@@ -45,27 +56,32 @@
     padding: spacer(1) 0 spacer(1) 0;
 
 	&:hover {
-		background:color-gray(0);	
+		background:transparent;	
 		color:color(branddark);
 	}
 }
 
 
-.shopFrontWindow h2 {
-	//background:color(brand);
-	background:none;
-	color:color(brand);
-	font-family:$font;
-	font-size: font-size(5);
-	position: absolute;
-	bottom:0;
-	margin-top:auto;
-	width:100%;
-	text-align: center;
-	padding:initial;
-	font-size: font-size(4);
-}
+.shopFrontWindow {
+	margin-bottom: spacer(7);
 
+	h2 {
+		background:color(brand);
+		//background:none;
+		//color:color(brand);
+		color:color-gray(0);
+		font-family:$font;
+		font-size: font-size(5);
+		position: absolute;
+		bottom:0;
+		margin-top:auto;
+		width:100%;
+		text-align: center;
+		padding:initial;
+		font-size: font-size(4);
+		padding:spacer(3) spacer(3);
+	}
+}
 
 h2.PanelTitle {
 	background: color-gray(0);
@@ -98,8 +114,28 @@ h2.PanelTitle {
 
 .difference, .promise, .infinnity, .delivery {
 	border-radius: 50%;
-	max-width: 200px;
+	max-width: 100px;
+	max-height: 100px;
+    background-size: cover;
+
+	@include min(bp(sm)) {
+		max-width: 100px;
+		max-height: 100px;
+	}
+	@include min(bp(md)) {
+		max-width: 150px;
+		max-height: 150px;
+	}
+	@include min(bp(lg)) {
+		max-width: 200px;
+		max-height: 200px;
+	}
 }
+
+.delivery {
+	background-size: 80%;
+}
+
 .difference span, .promise span, .infinnity span, .delivery span {
 	//background:color(brand);
 	//font-size: 16px;
@@ -108,7 +144,7 @@ h2.PanelTitle {
 	//font-family:$font;
 
 	position: relative;
-    bottom: -209px;
+    bottom: -149px;
     text-align: center;
     background: none;
     color: color(primary);
@@ -122,9 +158,16 @@ h2.PanelTitle {
     line-height: 1.2;
     font-size:font-size(5);
     width:100%;
-	padding-top: spacer(6);
+    padding-top: spacer(1);
+
+    @include min(bp(lg)) {
+    	bottom: -209px;
+		padding-top: spacer(6);
+	}	
 	//border:1px solid red;
 	margin-bottom: spacer(6);
+
+
 }
 
 .footer {
