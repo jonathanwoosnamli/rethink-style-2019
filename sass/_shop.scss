@@ -66,6 +66,7 @@
 .shopFrontWindow {
 	//margin-bottom: spacer(7);
 	min-height: 210px;
+	min-width: auto;
 
 	@include min(bp(xs)) {
 		min-height: 308px;
@@ -102,7 +103,7 @@
 		/*@include min(bp(sm)) {
 			bottom:0;
 		}*/
-		@include min(bp(lg)) {
+		@include min(bp(sm)) {
 			bottom:0;
 			position: absolute;
 		}
@@ -125,21 +126,29 @@ h2.PanelTitle {
 
 //hide 3rd product on tab only
 .zen-product {
-	
+
 	&:nth-child(3) {
 		@include min(bp(sm)) {
 			//background: red;
 			//border: 3px solid red;
 			display: none;
 		}
-		@include min(bp(lg)) {
+		@include min(bp(xl)) {
 			//background: blue;
 			//border: 3px solid red;
 			display: inline-block;
 		}
 	}
 }
-
+.zen-popular-product-img {
+	width:200px;
+	@include min(bp(sm)) {
+			width:100px;
+	}
+	@include min(bp(lg)) {
+			width:150px;
+	}
+}
 
 
 .zen-popular-product-title a {
@@ -161,22 +170,22 @@ h2.PanelTitle {
 
 .difference, .promise, .infinnity, .delivery {
 	border-radius: 50%;
-	max-width: 150px;
-	max-height: 150px;
+	max-width: 200px;
+	max-height: 200px;
     background-size: cover;
 	margin:auto;
 
 	@include min(bp(sm)) {
-		max-width: 100px;
-		max-height: 100px;
+		max-width: 150px;
+		max-height: 150px;
 	}
 	@include min(bp(md)) {
 		max-width: 150px;
 		max-height: 150px;
 	}
 	@include min(bp(lg)) {
-		max-width: 200px;
-		max-height: 200px;
+		max-width: 150px;
+		max-height: 150px;
 	}
 }
 
@@ -193,8 +202,9 @@ h2.PanelTitle {
 	position: relative;
     text-align: center;
     color: color(primary);
+    min-height: 47px;
     //left: -10px;
-	top:100px;
+	//top:100px;
 	z-index: 10;
 	font-family: font-family(title);
     font-weight: 700;
