@@ -6,10 +6,42 @@
 		max-height:90px;
 	}
 	div {
-		font-size: font-size(1);
-		color:$color-brand;
-		font:$font-header;
+		font-size: font-size(4) !important;
+		color:$color-brand !important;
+		font-family:$font-header !important;
 	}
+}
+
+
+//quotes
+.rotatingText span {
+
+	margin-top: 60px;    
+	quotes: "“" "”" "‘" "’";
+	font-family: $font-header !important;
+	//padding-right: spacer(3);
+	padding-left: spacer(6);
+	margin-top: spacer(6);
+	display: block;
+    //padding: 0;
+    background: none;
+    //margin: 0;
+    width:auto !important;
+
+}
+.rotatingText span:before {
+    color: color(brand);
+    content: open-quote;
+}
+.rotatingText span:before {
+    font-size: 95px;
+    //position: relative;
+    position: absolute;
+    top: 117px;
+    left: 0;
+    //font-family: var(--font-family-paragraph);
+    //color: var(--color-brand-base);
+    content: open-quote;
 }
 
 
