@@ -62,9 +62,42 @@ input[type="button"].Padlock {
 
     &:hover {
     	background-color: color(secondary,light);
-    	color:color(secondary,dark);
+    	//color:color(secondary,dark);
+    	color: color-gray(10);
     	cursor:pointer;
     }
+}
+
+.donationsFrequency td label {
+	padding: spacer(2) spacer(3);
+    display: block;
+    position: relative;
+    background-color: color-gray(0);
+    color: color(text);
+    border-radius: 1000px;
+    border-color: color(secondary);
+    padding: spacer(2);
+
+    &:hover {
+    	background-color: color(secondary,light);
+    	//color:color(secondary,dark);
+    	color: color-gray(10);
+    	cursor:pointer;
+    }
+}
+
+.donationsFrequency td label {
+	border-radius: 0;
+}
+
+.donationOptions input:checked + label, .donationsFrequency td input:checked + label {
+	background-color: color(secondary,light) !important;
+    color:color-gray(10);
+}
+
+.TextButton:hover {
+	background:color(primary, dark);
+	opacity: 1;
 }
 
 input.donationOther {
