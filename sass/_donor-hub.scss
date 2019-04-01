@@ -30,7 +30,7 @@
 
 }
 .rotatingText span:before {
-    color: color(brand);
+    color: color(secondary, light);
     content: open-quote;
 }
 .rotatingText span:before {
@@ -45,9 +45,13 @@
 }
 
 
-input[type="button"].Padlock {
-	//background: blue url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
-	background: red;
+input[type="button"].Padlock, .donationButton {
+	background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
+	//background: red;
+
+	&:hover {
+		background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
+	}
 }
 
 
