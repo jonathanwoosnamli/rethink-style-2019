@@ -48,11 +48,19 @@
 input[type="button"].Padlock, .donationButton {
 	background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
 	//background: red;
-
+	&.LargeButton {
+		background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
+		&:hover {
+			background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
+		}	
+	}	
 	&:hover {
 		background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
+
 	}
 }
+
+
 
 
 .donationOptions label {
@@ -108,6 +116,11 @@ input.donationOther {
     padding-left: 60px !important;
 }
 
+
+.recaptcha {
+	margin-top: spacer(3);	
+}
+
 .footerCentered > * {
 		text-align: center;
 		margin:auto;
@@ -140,3 +153,5 @@ input.donationOther {
 			padding:0 spacer(2);
 		}
 }
+
+
