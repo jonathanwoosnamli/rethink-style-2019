@@ -51,6 +51,25 @@ input[type="button"].Padlock {
 }
 
 
+.donationOptions label {
+	padding: spacer(2) spacer(3);
+    display: block;
+    position: relative;
+    background-color: color(secondary);
+    color: color-gray(0);
+    border-radius: 1000px;
+    padding: spacer(2);
+
+    &:hover {
+    	background-color: color(secondary,light);
+    	color:color(secondary,dark);
+    	cursor:pointer;
+    }
+}
+
+input.donationOther {
+    padding-left: 60px !important;
+}
 
 .footerCentered > * {
 		text-align: center;
