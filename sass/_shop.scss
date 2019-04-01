@@ -21,46 +21,7 @@
 }
 
 
-// shop menu
-.RadMenu ul.rmHorizontal, .RadMenu ul.rmHorizontal {
 
-    display: flex;
-    justify-content: space-between;
-	max-width:1000px;
-	margin:auto;
-	background:none;
-
-	//width: 100%;
-
-    //background-color: varcolor-gray-0);
-    //padding: var(--spacer-2) 0;
-    box-shadow: -7px 9px 8px transparent;
-    //transition: box-shadow .3s ease-in-out;
-    border-bottom: 1px solid color-gray(20);
-	margin-bottom:spacer(5);
-
-
-	.rmItem {
-		.rmLink {
-			background:color-gray(0);	
-			color:color-gray(100);
-		}
-	}
-}
-
-.RadMenu.rmResponsive .rmRootGroup > .rmItem > .rmLink {
-	background:transparent;	
-	color:color(brand);
-	font-size: font-size(6);
-    font-weight: 700;
-    //width: 100%;
-    padding: spacer(1) 0 spacer(1) 0;
-
-	&:hover {
-		background:transparent;	
-		color:color(branddark);
-	}
-}
 
 
 .shopFrontWindow {
