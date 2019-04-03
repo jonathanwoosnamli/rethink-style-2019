@@ -105,11 +105,11 @@ h3 {font-size:32px;}
 h4 {font-size:24px;}
 h1,h2,h3,h4 {
 	color:$color-brand;
-	font:$font-header;
+	font-family:$font-header;
 }
 h5,h6 {
 	color:rgb(0, 0, 0);
-	font:$font;
+	font-family:$font;
 	font-size: 16px;
 }
 p {
