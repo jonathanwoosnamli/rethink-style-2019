@@ -56,6 +56,8 @@ h2.panel-title, .TitleBarCaption {
 
 .TextButton {
 	font-size:font-size(5) !important;
+	//background: transparent;
+	//color:color(text);
 	//padding:inherit !important;
 }
 
@@ -65,5 +67,26 @@ h2.panel-title, .TitleBarCaption {
 		background-color: transparent !important;
 		color:color(text) !important;
 		font-size: font-size(5) !important;
+	}
+}
+
+.iMIS-WebPart > .ContentItemContainer {
+	padding-bottom: spacer(3);
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciNewViewzCommon_ciNewViewzCommon_ViewzUpdatePanel div {
+	margin:auto !important;
+}
+
+//save and cancel buttons
+#ctl01_TemplateBody_WebPartManager1_gwpciNewCommunicationPreferencesEditorCommon_ciNewCommunicationPreferencesEditorCommon_LocalButtonBar {
+	.TextButton {
+		background: transparent;
+		color:color(primary);
+		padding:inherit !important;
+		margin:auto;
+		&:active {
+			box-shadow: none;
+		}
 	}
 }
