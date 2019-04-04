@@ -23,5 +23,21 @@ h2 {
 }
 
 .box {
-	//box-shadow: -7px 9px 8px rgba(0,0,0,.1);
+	box-shadow: -7px 9px 8px rgba(0,0,0,.1);
+}
+
+h2.panel-title, .TitleBarCaption {
+	border-bottom: 0;
+}
+
+.panel-heading.Distinguish {
+	border-bottom-style: none;
+	margin:auto;
+}
+.SectionLabel {
+	color:color(text);
+}
+
+.PrimaryButton {
+	font-size:inherit !important;
 }

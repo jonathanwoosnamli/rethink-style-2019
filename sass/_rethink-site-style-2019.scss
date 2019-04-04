@@ -103,7 +103,10 @@ h1 {
 h2 {font-size:40px;}
 h3 {font-size:32px;}
 h4 {font-size:24px;}
-h1,h2,h3,h4 {
+
+h2.panel-title { font-size:font-size(5); }
+
+h1,h2,h3,h4, h2.panel-title {
 	color:$color-brand;
 	font-family:$font-header;
 }
@@ -112,6 +115,7 @@ h5,h6 {
 	font-family:$font;
 	font-size: 16px;
 }
+
 p {
 	//color:rgb(148, 148, 148);
 }
