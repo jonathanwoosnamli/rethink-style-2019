@@ -90,3 +90,60 @@ h2.panel-title, .TitleBarCaption {
 		}
 	}
 }
+
+//your voice back eds
+#ste_container_cibackeditions span {
+	margin:auto;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpcibackeditions_cibackeditions_Panel_backeditions div {
+	background-color: color-gray(30) !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciNewContentHtml21_ciNewContentHtml21_Panel_NewContentHtml21 {
+	div {
+		background-color: color-gray(0) !important;
+	}
+	span {
+		color:color(primary);
+		text-align: center;
+		font-size:font-size(2);
+		margin:auto;
+	}
+}
+
+
+
+//ul styles
+
+.ContentItemContainer ul li:before {
+    content: "";
+    position: absolute;
+    top: .3rem;
+    left: 0;
+    width: spacer(2);
+    height: spacer(2);
+    background-color: color(primary);
+    border-radius: 50%;
+    margin:spacer(4);
+}
+
+.ContentItemContainer ul li {
+    position: relative;
+    line-height: 1.25;
+    padding-left: 1.625rem;
+    margin-bottom: spacer(3);
+    padding:spacer(4);
+}
+
+.ContentItemContainer ul {
+    list-style: none;
+    padding-left: 1rem;
+    max-width: 500px;
+    margin:auto;
+    padding:spacer(4);
+}
+
+.yourVoice td {
+	padding:auto;
+}
