@@ -29,7 +29,9 @@ h2 {
 h2.panel-title, .TitleBarCaption {
 	border-bottom: 0;
 }
-
+.panel-heading {
+	margin:auto;
+}
 .panel-heading.Distinguish {
 	border-bottom-style: none;
 	margin:auto;
@@ -40,4 +42,28 @@ h2.panel-title, .TitleBarCaption {
 
 .PrimaryButton {
 	font-size:inherit !important;
+}
+.CommunicationPreferencesSection {
+	background-color: color-gray(10);
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciNewCommunicationPreferencesEditorCommon_ciNewCommunicationPreferencesEditorCommon_UnsubscribeContainer {
+	label {
+		padding-top:inherit;
+	}	
+}
+
+
+.TextButton {
+	font-size:font-size(5) !important;
+	//padding:inherit !important;
+}
+
+//gift aid box
+#ctl01_TemplateBody_WebPartManager1_gwpciGiftAidMembership_ciGiftAidMembership_ViewzUpdatePanel {
+	.LargeButton {
+		background-color: transparent !important;
+		color:color(text) !important;
+		font-size: font-size(5) !important;
+	}
 }
