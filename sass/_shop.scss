@@ -22,9 +22,7 @@
 
 
 
-#shopTile {
-	display: none;
-}
+
 
 .shopFrontWindow {
 	//margin-bottom: spacer(7);
@@ -48,7 +46,7 @@
 
 
 	h2 {
-		background:color(brand);
+		//background:color(brand);
 		background:none;
 		//color:color(brand);
 		color:color-gray(0);
@@ -71,6 +69,14 @@
 			position: absolute;
 		}
 	}
+}
+
+h2 {
+	background:none;
+}
+
+#shopTitle {
+	display: none;
 }
 
 h2.PanelTitle {
@@ -196,83 +202,29 @@ h2.PanelTitle {
 
 }
 
-.footer {
-	margin-top: spacer(7);
-	display: block;
-}
-
-.footerLeft {
-	ul {
-		width:100%;
-		text-align: center;
-		margin: auto;
-		display: inline-block;
-		//justify-content: space-between;
-
-		@include min(bp(lg)) {
-			display: flex !important;
-			justify-content: space-between;
-		}
 
 
-		li {
-			font-size: font-size(5);
-			display: inline-block;
-			
-			@include min(bp(lg)) {
-				display: block;
-			}
-		}
-	}
-}
-.footerRight {
+//lists on product description
+span[id*='ProductDescription'] {
 
-	text-align: right;
+	li {
 
-	.helpandadvice {
-		font-weight: normal;
-	}
+		padding-left: 1.625rem !important;
 
-
-}
-
-.footer-content {
-	
-	padding-top:spacer(7);
-	padding-bottom:spacer(7);
-	background-color:color-gray(10) !important;
-	color:color-gray(60);
-
-	a {
-		color:color-gray(100);
-		text-decoration:none;
-		&:visited {
-			color:color-gray(100);
-		}
-		&:hover {
-			color:color-gray(100);
+		&:before {
+	    content: "";
+	    position: absolute;
+	    top: .3rem;
+	    left: 0;
+	    width: spacer(2);
+	    height: spacer(2);
+	    background-color: color(primary);
+	    border-radius: 50%;
+	    margin-top:spacer(4);
 		}
 	}
 }
 
-.navfooter {
-	color:color-gray(60);
-	text-align: center;
-	background-color:color-gray(10) !important;
+span[id$="ProductDescription"] {
+	color:color(text);
 }
-
-/*.footer-content {
-	background-color:color-gray(10) !important;
-}
-.footer-nav-copyright {
-	background-color:color-gray(10);	
-}
-.navfooter {
-	color:color-gray(60);
-	text-align: center;
-}
-
-.nav-auxiliary .navbar-toggle {
-	background-color: color(brand);
-	color:black;
-}*/

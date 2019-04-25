@@ -121,29 +121,6 @@ input.donationOther {
 	margin-top: spacer(3);	
 }
 
-.footerCentered > * {
-		text-align: center;
-		margin:auto;
-}
-
-.footerCentered {
-	span {
-		color:color-gray(60);
-	}
-	.rethinkColor {
-		font-size:font-size(6);
-	}
-
-	a {
-		font-size:font-size(6);	
-		color:color-gray(60);
-		font-weight: bold;
-	}
-}
-
-#RethinkFooter a {
-	font-size:font-size(6);	
-}
 
 .NavigationUnorderedList {
 	span {
