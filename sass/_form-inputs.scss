@@ -164,6 +164,11 @@ input[type="checkbox"] {
     width:auto;
     min-width: 200px;
 
+    &.navbar-toggle {
+        min-width: auto;
+    }
+
+
 }
 
 button, input, select, textarea {

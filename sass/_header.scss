@@ -2,15 +2,23 @@
 // shop menu
 .RadMenu ul.rmHorizontal, .RadMenu ul.rmHorizontal {
 
-    display: flex;
-    justify-content: space-between;
-	max-width:1000px;
-	margin:auto;
-	background:none;
-    box-shadow: -7px 9px 8px transparent;
-    border-bottom: 1px solid color-gray(20);
-	margin-bottom:spacer(5);
-	box-shadow: 0px 12px 8px -5px rgba(0,0,0,.1);
+
+	display: block;
+	max-width:auto;
+
+	@include min(bp(md)) {	
+	    display: flex;
+	    justify-content: space-between;
+	    max-width:1000px;
+	}
+
+		
+		margin:auto;
+		background:none;
+	    box-shadow: -7px 9px 8px transparent;
+	    border-bottom: 1px solid color-gray(20);
+		margin-bottom:spacer(5);
+		box-shadow: 0px 12px 8px -5px rgba(0,0,0,.1);
 
 	.rmItem {
 		.rmLink {
@@ -32,4 +40,19 @@
 		background:transparent;	
 		color:color(branddark);
 	}
+}
+
+.NavigationUnorderedList {
+	span {
+			color:color-gray(100);
+			font-weight:400;
+			font-size: font-size(5);
+			
+			padding:auto;
+
+			@include min(bp(md)) {
+				padding:0 spacer(2);
+			}
+
+		}
 }
