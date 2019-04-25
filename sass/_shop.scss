@@ -203,6 +203,21 @@ h2.PanelTitle {
 }
 
 
+//
+input[id*='QuantityTextBox'] {
+	padding:inherit;
+	//padding-left:1rem;
+	text-align:center !important;
+	margin:auto;
+}
+
+ 
+
+div[id*='AddToCartDiv'] {
+	text-align: center !important;
+	margin:auto;
+	font-weight: bold;
+}
 
 //lists on product description
 span[id*='ProductDescription'] {
