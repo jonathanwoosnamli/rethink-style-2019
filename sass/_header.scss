@@ -2,7 +2,6 @@
 // shop menu
 .RadMenu ul.rmHorizontal, .RadMenu ul.rmHorizontal {
 
-
 	display: block;
 	max-width:auto;
 
@@ -12,13 +11,9 @@
 	    max-width:1000px;
 	}
 
-		
 		margin:auto;
 		background:none;
-	    box-shadow: -7px 9px 8px transparent;
-	    border-bottom: 1px solid color-gray(20);
 		margin-bottom:spacer(5);
-		box-shadow: 0px 12px 8px -5px rgba(0,0,0,.1);
 
 	.rmItem {
 		.rmLink {
@@ -26,6 +21,13 @@
 			color:color-gray(100);
 		}
 	}
+}
+
+//header shadow
+.header-bottom-container {
+	    box-shadow: -7px 9px 8px transparent;
+	    border-bottom: 1px solid color-gray(20);
+		box-shadow: 0px 12px 8px -5px rgba(0,0,0,.1);
 }
 
 .RadMenu.rmResponsive .rmRootGroup > .rmItem > .rmLink {
