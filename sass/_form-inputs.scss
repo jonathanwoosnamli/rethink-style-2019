@@ -182,3 +182,15 @@ button, input, select, textarea {
 #ctl00_TemplateBody_WebPartManager1_gwpciCreateaccountloginAfd_ciCreateaccountloginAfd_AfdAddressListBox8677da2d628e4a42ac634d699f6f12af {
     max-width: initial;
 }
+
+//address checker address select
+.afdCountry {
+        max-width: none !important;
+        padding-left:spacer(3);
+}
+
+
+
+input[id*='AfdEmail'] {
+        margin-bottom:spacer(3);
+}
