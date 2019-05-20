@@ -15,7 +15,7 @@
 }
 
 .PanelField {
-	padding:0;
+	padding:1em 0;
 	@include min(bp(sm)) {
 		//padding:0;
 	}

@@ -58,6 +58,7 @@ input[type="radio"],
 input[type="checkbox"] {
     width: $input-size;
     height: $input-size;
+
 }
 
 .custom-input {
@@ -136,7 +137,9 @@ input {
 
 input[type="checkbox"] {
     display: inline-block;
-    margin-left: 1.6rem;
+    //margin-left: 1.6rem;
+    margin-left: 10px;
+
 }
 
 
