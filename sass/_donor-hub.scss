@@ -46,16 +46,16 @@
 
 
 input[type="button"].Padlock, .donationButton {
-	background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
+	background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 12px center !important;
 	//background: red;
 	&.LargeButton {
-		background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
+		background: color(primary) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 12px center !important;
 		&:hover {
-			background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 20px center !important;
+			background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat right 12px center !important;
 		}	
 	}	
 	&:hover {
-		background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 20px center !important;
+		background: color(primary, dark) url("https://my.rethink.org/app_themes/donorhub/images/donorhub/padlock-3-24.png") no-repeat left 12px center !important;
 
 	}
 }
