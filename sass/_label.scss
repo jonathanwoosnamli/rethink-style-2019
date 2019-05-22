@@ -30,6 +30,7 @@ div[class*=' en__field--opt-in-']  {
 
 .PanelField label, .PanelField .Label {
   //width:auto;
+  width:100%;
     @include min(bp(sm)) {
       //width:100%;
     }
@@ -80,4 +81,12 @@ label {
   label {
     padding: spacer(6) 0 spacer(1) 0.6rem;
   }
+}
+
+//date of birth field fix
+html body .RadInput .riTextBox {
+  padding:1rem;
+}
+html body .riSingle .riTextBox[type="text"] {
+  padding:1rem; 
 }
