@@ -107,8 +107,8 @@ h4 {font-size:24px;}
 h2.panel-title { font-size:font-size(5); }
 
 h1,h2,h3,h4, h2.panel-title {
-	color:$color-brand;
-	font-family:$font-header;
+	color:$color-brand !important;
+	font-family:$font-header !important;
 }
 h5,h6 {
 	color:rgb(0, 0, 0);

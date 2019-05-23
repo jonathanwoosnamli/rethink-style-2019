@@ -155,6 +155,44 @@ h2.panel-title, .TitleBarCaption {
 }
 
 
+//sign up pages 
+//stupid overrides...
+.green , .deepblue, .rethinkblue, .orange {
+	color:#00b0f0 !important;
+	font-family: CoRethink,"Helvetica Neue",Arial,sans-serif !important;
+}
+
+#wethinkConversionAug2016 #whatyouget h1, #wethinkConversionAug2016 #pricepoints h1 {
+	color:#00b0f0 !important;
+	font-family: CoRethink,"Helvetica Neue",Arial,sans-serif !important;
+}
+
+
+
+#wethinkConversionAug2016 .mainsell {
+     background-color: inherit; 
+     border-top: 0; 
+    
+}
+
+#wethinkConversionAug2016 #hero {
+    background-color: inherit; 
+}
+
+#wethinkConversionAug2016 #sell {
+    background-color: inherit; 
+}
+
+
+#wethinkConversionAug2016 .benefit img {
+	border-radius:50%;
+	float:none;
+}
+
+#wethinkConversionAug2016 .benefit h1 {
+	text-align: center;
+}
+
 /*-------------wethink conversion page 2016-----------*/
  /*
  #wethinkConversionAug2016 {
