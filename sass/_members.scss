@@ -153,3 +153,393 @@ h2.panel-title, .TitleBarCaption {
 .yourVoice td {
 	padding:auto;
 }
+
+
+/*-------------wethink conversion page 2016-----------*/
+ /*
+ #wethinkConversionAug2016 {
+	 max-width:1170px;
+	 margin:auto;
+	 
+ }
+ #wethinkConversionAug2016 .container{
+  background-color: white;
+    }
+#wethinkConversionAug2016 body{
+  background-color: #ddf6ff;
+}
+#wethinkConversionAug2016 #logoarea{
+  background-color: white;; 
+}
+
+#wethinkConversionAug2016 .mainsell{
+background-color: #93107d;
+border-top: solid 10px #007dbe;
+clear:both;
+}
+
+
+
+#wethinkConversionAug2016 #logoarea h2{
+  Color: #00adee; 
+  font-family: 'CoRethinkLightRegular', sans-serif;
+  font-size: 55px;
+  float:left;
+  padding-left:10px;
+}
+#wethinkConversionAug2016 #signinarea{
+  background-color: #eefaff;
+  ///*height: 95px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #00adee;
+  padding: 10px;
+	font-size: 1.25em;
+	margin-bottom:1em;
+  
+}
+#wethinkConversionAug2016 #signinarea a{
+   color: white;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1em;
+  background: #ff0000;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  white-space:nowrap;
+}
+#wethinkConversionAug2016 #hero{
+  background-color: #93107d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#wethinkConversionAug2016 #sell{
+  background-color: #93107d;
+  color: white;
+  min-height: 305px;
+}
+#wethinkConversionAug2016 #sell h1{
+  margin-top: 30px; //*margin-top: 1.5em;
+  font-family: 'CoRethinkRegular', sans-serif;
+  font-size: 3em;
+  margin-bottom: .25em;
+  color:#fff;
+  
+}
+
+ #wethinkConversionAug2016 #signinarea .forgotPassWord {
+  background:transparent !important;
+  font-size:11px;
+  color:#000;
+  //*display:block;
+  display:none;
+  padding-top:10px;
+   
+}
+
+
+#wethinkConversionAug2016 #leftUs {
+	padding-top:10px;
+	font-size:12px;
+}
+#wethinkConversionAug2016 #sell h2{
+  font-family: 'arial';
+  color:#fff;
+  
+}
+#wethinkConversionAug2016 #sell {
+	text-align:left;
+}
+#wethinkConversionAug2016 #sell a{
+  white-space:nowrap;
+  color: #93107d;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: 1em;
+  background: #ffffff;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-weight: bold; 
+}
+#wethinkConversionAug2016 .benefit{
+  vertical-align: text-top;
+  padding: 10px;
+  font-size: 15px;
+
+  
+}
+#wethinkConversionAug2016 .benefit h1{
+  margin-top: 0px;
+  font-family: 'CoRethinkRegular', sans-serif;
+  font-size: 1.75em;
+  text-align: left;
+  color: #e75112;
+}
+
+#wethinkConversionAug2016 .benefit img{
+  float: left;
+  margin-right: 10px;
+}
+#wethinkConversionAug2016 .space{
+  padding-top: 20px;
+}
+#wethinkConversionAug2016 .products{
+  padding: 10px;
+}
+
+#wethinkConversionAug2016 #whatyouget h1{
+font-size: 2.5em;
+text-align: center;
+font-family: 'CoRethinkRegular', sans-serif;
+color: red;
+}
+#wethinkConversionAug2016 #pricepoints h1{
+font-size: 2.5em;
+text-align: center;
+font-family: 'CoRethinkRegular', sans-serif;
+color: red;
+
+}
+
+
+///* START COMPARISON TABLE STYLES 
+#wethinkConversionAug2016 #comparetable {font-family: arial; table-layout: fixed; text-align: center; margin: 4em 0; border-collapse: collapse; margin-left: auto; margin-right: auto; }
+#wethinkConversionAug2016 #comparetable tr {background: transparent!important;}
+#wethinkConversionAug2016 #comparetable td,
+#wethinkConversionAug2016 #comparetable th {padding: 15px; text-align: center;}
+#wethinkConversionAug2016 #comparetable td.rowTitle {text-align: left;}
+#wethinkConversionAug2016 .cellclear{background-color: white; border: none;}
+#wethinkConversionAug2016 .blank {background: none!important; border: none!important;}
+ #wethinkConversionAug2016 .clean th {background-color: #dfdfdf; font-size: 20px; color: white; text-align: center; font-weight: 400; border: 1px solid #bbbbbb;}
+ #wethinkConversionAug2016 .clean td {background-color: #f0f1f1; border: 1px solid #c8d6e2;}
+  #wethinkConversionAug2016 .clean td.rowTitle {font-size: 20px; font-weight: 400;}
+#wethinkConversionAug2016 #comparetable th{width: 33%; background-color: #93107d;}
+
+///* END COMPARISON TABLE STYLES 
+
+#wethinkConversionAug2016 .footer{
+margin-top: 20px;
+border-top: solid 10px #007dbe;
+padding : 20px; 
+background-color: #00adee; 
+height: 100px;
+text-align: center; 
+color: white;  
+}
+
+#wethinkConversionAug2016 .green{color: #7c9e22!important}
+#wethinkConversionAug2016 .deepblue{color:#007dbe!important;}
+#wethinkConversionAug2016 .orange{color: #e75112!important;}
+#wethinkConversionAug2016 .rethinkblue{color: #00adee!important;}
+
+#wethinkConversionAug2016 .price{
+font-size: 3em;
+}
+#wethinkConversionAug2016 .peryear{
+font-size: .75em;
+}
+#wethinkConversionAug2016 .signup{
+color: red;
+font-size 2em;
+color: white;
+white-space:nowrap;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1.5em;
+  background: #ff0000;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+#wethinkConversionAug2016 .paywith{
+font-size: .75em;
+}
+
+#wethinkConversionAug2016 #socialtable{
+width: 75%;
+margin-left: auto; 
+margin-right: auto; 
+}
+
+#wethinkConversionAug2016 #socialquote h1{
+font-size: 1.5em; 
+color: #e75112;
+font-family: 'CoRethinkLightRegular', sans-serif;
+}
+#wethinkConversionAug2016 .quoteimage{
+float: left; 
+min-height: 150px !important; 
+min-width: 150px !important; 
+///*margin: 20px; 
+padding-right:1em;
+}
+#wethinkConversionAug2016 .author{
+padding-top: 10px;
+font-family: arial; 
+font-size: 1em;
+}
+
+#wethinkConversionAug2016 h2 {
+	border-color:transparent;
+}
+#wethinkConversionAug2016 .benefit p {
+	text-align:left;
+}
+
+.navbar-toggle {
+	background-color:#00adee !important;
+	
+}
+
+///*span id UnitPriceLabel
+///*span id AmountLabel
+
+span[id$="UnitPriceLabel"]::before {
+content: " £";
+}
+span[id$="AmountLabel"]::before {
+content: " £";
+}
+span[id$="SubtotalValueLabel"]::before {
+content: " £";
+}
+
+
+
+///* BOOTSTRAP sized media queries ========================================================================================================= 
+
+
+
+@media(max-width:767px) and (max-width:768px) { //* BS- col-xs - mobile
+	#wethinkConversionAug2016 .clean th {
+		font-size:13px;
+	}
+	#wethinkConversionAug2016 .price {
+		font-size:13px;
+	}
+	#wethinkConversionAug2016 .clean td.rowTitle {
+		font-size:13px;
+	}
+	#wethinkConversionAug2016 #comparetable td, #wethinkConversionAug2016 #comparetable th {
+		padding:0;
+		padding:5px 5px;
+	}
+	#wethinkConversionAug2016 #comparetable {
+		margin-top:10px;
+	}
+	#wethinkConversionAug2016 .signup {
+		font-size:13px;
+	}
+	#wethinkConversionAug2016 #signinarea {
+		margin:auto;
+		display:inline-block;
+	}
+	#wethinkConversionAug2016 #logoarea h2 {
+		font-size:30px;
+	}
+	#wethinkConversionAug2016 #logoarea {
+		display:inline-block;
+	}
+	#wethinkConversionAug2016 #sell {
+	text-align:center;
+	}
+	#wethinkConversionAug2016 #sell h1 {
+		margin-top:0;
+		font-size:27px;
+	}
+	#wethinkConversionAug2016 #socialquote h1 {
+		font-size:20px;
+	}
+	#wethinkConversionAug2016 #sell {
+		min-height:200px;
+	}
+	#wethinkConversionAug2016 #sell h2 {
+		font-size:18px;
+	}
+	#wethinkConversionAug2016 .benefit {
+		border-bottom:1px solid #f3f3f3;
+		margin-bottom:10px;
+	}
+	
+	#wethinkConversionAug2016 .benefit p {
+		display:block;
+		margin-bottom:0;
+	}
+	.RadMenu ul.rmHorizontal {
+		height:auto;
+	}
+}
+@media(min-width:768px) and (max-width: 992px) { //* BS- col-sm -tablet 
+	#wethinkConversionAug2016 #sell h1 {
+		margin-top:10px;
+		font-size:30px;
+		
+	}
+	#wethinkConversionAug2016 #sell h2 {
+		font-size:23px;
+	}
+	#wethinkConversionAug2016 #sell h3 {
+		font-size:20px;
+	}
+	#wethinkConversionAug2016 .benefit {
+		width:25%;
+		
+	}
+	#wethinkConversionAug2016 .benefit h1 {
+		clear:both;
+	}
+	
+		
+}
+
+@media(min-width:992px) and (max-width: 1200px) { //* BS- col-md - desktops 
+	#wethinkConversionAug2016 #sell h1 {
+		margin-top:0;
+	}
+}
+@media(min-width:1200px) { ///* BS- col-lg -large desktops 
+
+	
+}
+
+// Portrait and Landscape  //iPhone 4+5
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (min-resolution: 2dppx) 
+  ///* and (-webkit-min-device-pixel-ratio: 2) 
+ {
+  //*Not being used at the moment, keeping until live!
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+  		
+
+
+}
+
+//new styles 2019
+.footer-content {
+	background:transparent;
+}
+.footer-nav-copyright {
+	background:transparent;
+}
+#ft {
+	background-color:transparent;
+	display:none;
+}
+*/
