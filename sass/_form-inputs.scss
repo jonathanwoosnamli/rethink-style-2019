@@ -20,7 +20,7 @@ body {
     border-radius: 1000px;
     border: none;
     background: color-gray(10);
-    padding: 0.875rem 1.75rem;
+    padding:unset;
     font-weight: bold;
     outline: none;
     color: color(text);
@@ -32,6 +32,7 @@ body {
         //min-height: 70px;
         //background:red;
         max-width: 550px;
+         padding: 0.875rem 1.75rem;
 
     }
     
