@@ -33,10 +33,29 @@ h2 {
 	margin:0.8em;
 	width:100%;
 	position:relative;
+    max-width: initial;
 
 	@include min(bp(sm)) {
 		min-height: 700px;
+		max-width:46%;
 		width:auto;
+	}
+
+
+	&.left {
+		float:none;
+
+		@include min(bp(sm)) {
+		float:left;
+		}
+	}
+
+	&.right {
+		float:none;		
+
+		@include min(bp(sm)) {
+		float:right;
+		}
 	}
 
 	.btn {
@@ -228,6 +247,39 @@ h2.panel-title, .TitleBarCaption {
 	text-align: center;
 }
 
+
+//members day form 2019
+.workshop-section {
+	input[type="radio"] {
+			margin-top:1rem;
+	}
+}
+textarea {
+	//width:100%;
+	padding:1rem;
+	min-width:290px;
+
+	@include min(bp(sm)) {
+		min-width:400px;
+	}
+}
+
+select {
+	padding: 0.8rem 1rem;
+    margin: 1rem auto;
+}
+
+input[type=text] {
+	padding: 0.8rem 1rem;
+    margin: 1rem auto;	
+}
+
+input[type="radio"] + label {
+	width: 90% !important;
+}
+.rmItem {
+	padding:0 1rem;
+}
 /*-------------wethink conversion page 2016-----------*/
  /*
  #wethinkConversionAug2016 {
