@@ -243,3 +243,104 @@ span[id*='ProductDescription'] {
 span[id$="ProductDescription"] {
 	color:color(text);
 }
+
+//new homepage styles 12/08/19
+
+    /******************/
+    .shop-hp-category {
+    text-align:center;
+    margin:auto;
+    }
+    .shop-hp-category img {
+    max-width:220px;
+    max-height:220px;
+    min-width:220px;
+    min-height:220px;
+    border-radius:50%;
+    }
+    .shop-hp-category img, .shop-hp-category p, .shop-hp-category a {
+    display:block;
+    margin:auto;
+    }
+    .shop-hp-category h2 {
+    color:grey !important;
+    text-align:center;
+    font-size:1.5rem;
+    padding:1rem;
+    margin:1rem;
+    margin-bottom:0;
+    }
+    .shop-hp-category .btn {
+    margin:1rem;
+    }
+    .shop-hp-front-window {
+    position:relative;
+    background-image:url(https://source.unsplash.com/random);
+    min-height:300px;
+    margin-bottom:200px;
+    }
+    .shop-hp-front-window h1 {
+    text-align:center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .shop-hp-front-window .roundel {
+    position: absolute;
+    top:267px;
+    left:50%;
+    background-color:white;
+    border-radius:50%;
+    max-width:230px;
+    max-height:230px;
+    min-width:230px;
+    min-height:230px;
+    margin:auto;
+    transform: translate(-50%, -50%);
+    }
+    .shop-hp-wide-pic {
+    background-image:url(https://source.unsplash.com/random);
+    min-height:400px;
+    background-size: cover;
+    }
+    .shop-hp-wide-pic h2 {
+    margin-top:0;
+    margin:0;
+    padding:0;
+    display:block;
+    }
+    .shop-hp-wide-pic h2, .shop-hp-wide-pic p, .shop-hp-wide-pic a  {
+    text-align:center;
+    display:block;
+    }
+    .shop-hp-wide-pic .btn {
+    margin:0;
+    padding: 0.5rem 1.5rem !important;
+    }
+    .shop-hp-wide-pic .roundel {
+    position: relative;
+    background-color:white;
+    border-radius:50%;
+    max-width:300px;
+    max-height:300px;
+    min-width:300px;
+    min-height:300px;
+    margin:auto;
+    padding:2rem;
+    margin-top:2rem;
+    /*top:2rem;*/
+    float:right;
+    margin:4rem;
+    }
+    @media (max-width:768px) {
+    .shop-hp-wide-pic .roundel {
+    /*float:none;*/
+    /*margin-right:auto;*/
+    }
+    }
+    .shop-hp-wide-pic .roundel-container {
+    position:absolute;
+    transform: translate(-5%, 14%);
+    }
