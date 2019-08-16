@@ -277,7 +277,7 @@ span[id$="ProductDescription"] {
     position:relative;
     background-image:url(https://source.unsplash.com/random);
     min-height:300px;
-    margin-bottom:200px;
+    margin-bottom:0;
     }
     .shop-hp-front-window h1 {
     text-align:center;
@@ -344,3 +344,19 @@ span[id$="ProductDescription"] {
     position:absolute;
     transform: translate(-5%, 14%);
     }
+
+	.front-window-text {
+		background: #00adee;
+		min-height: 200px;
+		margin-top: -2px;
+		padding-top: 130px;
+		color:#fff;
+		text-align:center;
+		margin:auto;
+		margin-bottom:1rem;
+		padding-bottom:2rem;
+
+		p {
+			margin:auto;
+		}
+	}
