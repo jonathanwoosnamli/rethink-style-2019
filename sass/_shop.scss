@@ -250,7 +250,16 @@ span[id$="ProductDescription"] {
     .shop-hp-category {
     text-align:center;
     margin:auto;
+    	.btn {
+    		a {
+    			color:white;
+    		}
+    	}
     }
+    .shop-hp-category a:visited {
+	color:white;
+	}
+
     .shop-hp-category img {
     max-width:220px;
     max-height:220px;
@@ -269,6 +278,7 @@ span[id$="ProductDescription"] {
     padding:1rem;
     margin:1rem;
     margin-bottom:0;
+    display: block;
     }
     .shop-hp-category .btn {
     margin:1rem;
@@ -315,6 +325,9 @@ span[id$="ProductDescription"] {
     text-align:center;
     display:block;
     }
+    .shop-hp-wide-pic a:visited {
+    	color:white;
+    }
     .shop-hp-wide-pic .btn {
     margin:0;
     padding: 0.5rem 1.5rem !important;
@@ -343,6 +356,14 @@ span[id$="ProductDescription"] {
     .shop-hp-wide-pic .roundel-container {
     position:absolute;
     transform: translate(-5%, 14%);
+    text-align: center;
+    }
+    .roundel-container {
+    	.btn {
+    		a {
+    			color:white;
+    		}
+    	}
     }
 
 	.front-window-text {

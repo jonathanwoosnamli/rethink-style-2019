@@ -141,7 +141,7 @@ h2.panel-title, .TitleBarCaption {
 //save and cancel buttons
 #ctl01_TemplateBody_WebPartManager1_gwpciNewCommunicationPreferencesEditorCommon_ciNewCommunicationPreferencesEditorCommon_LocalButtonBar {
 	.TextButton {
-		background: transparent;
+		background: transparent !important;
 		color:color(primary);
 		padding:inherit !important;
 		margin:auto;
