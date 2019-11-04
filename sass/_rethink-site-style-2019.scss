@@ -209,5 +209,13 @@ img text with text btn
 */
 
 
+/*mobile menu*/
+@include min(bp(sm)) {
+  ul.rmRootGroup li {
+    background:color(brand);
+  }
+}
 
-
+ul.rmRootGroup li {
+    background:transparent;
+}
